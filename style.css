@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: "Barlow Semi Condensed", sans-serif;
+    background-color: rgb(243, 242, 242);
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+}
+p {
+    font-size: 12px;
+}
+
+header{
+    display: flex;
+    gap: 10px;
+}
+.container{
+    display: grid;
+    place-content: center;
+    /* width: 200px;*/
+    
+    margin: 100px 100px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap:15px;
+}
+img{
+    display: block;
+    margin-top: 10px;
+    border-radius: 50%;
+    /* float: left; */
+    /* padding-right: 20px; */
+    /* width: 80px;
+    height: 80px; */
+    height: 50px;
+}
+.quote{
+    line-height: 5px;
+    /* display: block; */
+    
+    /* padding: 20px; */
+}
+.card1{
+    background-color: rgb(108, 2, 194);
+    grid-column: span 2;
+    border-radius: 15px;
+    padding: 40px;
+    color: rgb(247, 244, 240);
+    
+}
+.card2{
+    grid-column: span 1;
+    background-color: rgb(92, 95, 109);
+    border-radius: 15px;
+    padding: 40px;
+    color: rgb(247, 244, 240);
+}
+.card3{
+    background-color: white;
+    grid-column: span 1;
+    grid-row: span 2;
+    border-radius: 15px;
+    padding: 40px;
+}
+.card4{
+    background-color: white;
+    border-radius: 15px;
+    padding: 40px;
+    grid-column: span 1;
+}
+.card5{
+    background-color: rgb(17, 17, 17);
+    grid-column: span 2;
+    border-radius: 15px;
+    padding: 40px;
+    color: rgb(247, 244, 240);
+}
+
+@media screen and (max-width:768px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    
+    }
+    .card1{
+        grid-column: span 1;
+        grid-row: auto;
+        width: 100%;
+    }
+    .card5{
+        grid-column: span 1;
+    }
+    /* .card2{
+        grid-column: span 2;
+    }
+    .card3{
+        grid-row: span 1;
+    } */
+    /* .card1{
+       
+    }
+    
+    .card5{
+       
+        
+        grid-column: span 1;
+    }
+    
+    
+    .card3{
+        
+        grid-row: span 1;
+    } */
+    
+}
+
+
